@@ -245,7 +245,7 @@ class attendence_system:
                     'nophoto':self.var_radio1()
                     }
                 rec=mydatabase.student_data.insert_one(record)
-
+                messagebox.showinfo("Success","Details added successfully..",parent=self.root)
                 
                 
 
@@ -278,7 +278,7 @@ class attendence_system:
         self.heading.place(x=380,y=70)
 
         
-        icon =Image.open(r"images\th copy.png")
+        icon =Image.open(r"images\menicon.png")
         icon = icon.resize((150, 120), Image.ANTIALIAS)
         photo=ImageTk.PhotoImage(icon)
         self.logo= Button(self.sidebar,image=photo,bg='#ffffff',cursor='hand2',bd=0)
